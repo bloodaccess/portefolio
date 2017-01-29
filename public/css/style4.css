@@ -1,0 +1,67 @@
+#projet_1, #projet_2, #projet_3
+{
+    display: inline-flex;
+    width: 32%;
+    position: relative;
+    height: 400px;
+    background-color: #706b64;
+    margin-left: 1%;
+    margin-right: auto;
+    box-shadow: 0px 4px 4px black;
+    margin-top: 0;
+    flex-direction: column;
+}
+
+#projet_4, #projet_5, #projet_6, #projet_7
+{
+    display: inline-flex;
+    width: 32%;
+    position: relative;
+    height: 400px;
+    background-color: #706b64;
+    margin-left: 1%;
+    margin-right: auto;
+    margin-top: 0;
+    box-shadow: 0px 4px 4px black;
+    margin-top: 3%;
+    flex-direction: column;
+}
+
+
+.projet_1
+{
+    width: 98%;
+}
+
+p
+{
+    margin-left: 2%;
+    color : whitesmoke;
+    margin-bottom: 2%;
+}
+
+#projet_1:hover, #projet_2:hover, #projet_3:hover, #projet_4:hover, #projet_5:hover, #projet_6:hover, #projet_7:hover
+{
+    width: 33%;
+    margin-left: 0%;
+}
+
+
+h3
+{
+    text-align: center;
+    color:whitesmoke;
+    text-decoration: underline;
+}
+
+@media screen and (max-width : 800px)
+{
+    #projet_1, #projet_2, #projet_3, #projet_4, #projet_5, #projet_6, #projet_7
+    {
+        width: 48%
+    }
+    #projet_1:hover, #projet_2:hover, #projet_3:hover, #projet_4:hover, #projet_5:hover, #projet_6:hover, #projet_7:hover
+    {
+        width: 49%;
+    }
+}

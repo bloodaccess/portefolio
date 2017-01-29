@@ -1,0 +1,9 @@
+create table user (
+
+usr_id int(3) constraint PRIMARY KEY(pk_usr_id) NOT NULL,
+usr_name varchar constraint NOT NULL (nn_usr_name),
+usr_mail varchar
+usr_mdp varchar contraint NOT NULL (nn_usr_mdp),
+
+)
+

@@ -1,0 +1,51 @@
+body, #page_projet, #connexion
+{
+    background-color: #222222;
+    word-wrap: break-word;
+}
+#contacts h2, #projet_1 h3, label, #presentation h2, #CV h2, #lettre_motivation h2
+{
+    text-align: center;
+    color: white;
+}
+.glyphicon, p, echo
+{
+    color:white;
+}
+#presentation echo p, #CV p, #lettre_motivation p
+{
+    font-size: 1.3em;
+}
+#dl a
+{
+    color: white;
+}
+#btnco
+{
+    margin-left: 30%;
+}.progress
+ {
+     position: relative;
+     height: 25px;
+ }
+.progress > .progress-type
+{
+    position: absolute;
+    left: 0px;
+    font-weight: 800;
+    padding: 3px 30px 2px 10px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(25, 25, 25, 0.2);
+}
+.progress > .progress-completed
+{
+    position: absolute;
+    right: 0px;
+    font-weight: 800;
+    padding: 3px 10px 2px;
+}
+#center
+{
+    margin-left: 50%;
+    float: none;
+}
