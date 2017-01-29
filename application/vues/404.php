@@ -1,5 +1,4 @@
-<!DOCTYPE html> 
-<!-- test -->
+<!DOCTYPE html>
 
 <html>
     <head>
