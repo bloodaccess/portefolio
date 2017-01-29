@@ -1,7 +1,6 @@
 <?php
 require_once './configs/chemins.class.php';
 require Chemins::VUES_PERMANENTE.'head.inc.php';
-//test
 ?>
 
 
