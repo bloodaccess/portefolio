@@ -49,3 +49,7 @@ body, #page_projet, #connexion
     margin-left: 50%;
     float: none;
 }
+.progress-bar
+{
+background-color: red;
+}
