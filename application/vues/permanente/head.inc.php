@@ -7,25 +7,13 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,600' rel='stylesheet' type='text/css'>
-        <link rel="icon" type="image/x-icon" href="public/images/icones/favico.jpg"/>
-        <link rel="stylesheet" href="public/css/style.css">
+        <link rel="icon" type="image/x-icon" href="/public/images/icones/favico.jpg"/>
+        <link rel="stylesheet" href="./public/css/style.css">
         <title>Grégory CAYZAC</title>
-        <script src="public/js/jquery-1.10.2.min.js"></script>
-        <script src="public/js/jquery.lightbox.js"></script>
-        <script src="public/js/templatemo_custom.js"></script>
-        <script>
-        function showhide()
-        {
-            var div = document.getElementById("newpost");
-            if (div.style.display !== "none")
-            {
-                div.style.display = "none";
-            }
-            else {
-                div.style.display = "block";
-            }
-        }
-        </script>
+        <script type="text/javascript" src="/public/js/jquery-1.10.2.min.js"></script>
+        <script type="text/javascript" src="/public/js/jquery.lightbox.js"></script>
+        <script type="text/javascript" src="/public/js/templatemo_custom.js"></script>
+        <script type="text/javascript" src="/public/js/wow.min.js"></script>
     </head>
 <header>
     <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -41,15 +29,15 @@
             <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
                 <li class="active"><a href="index.php#presentation">Accueil</a></li>
-                <li><a href="index.php">Compétences</a></li>
+                <li><a href="index.php#skillbar">Compétences</a></li>
                 <li><a href="index.php#CV">Mon CV</a></li>
-                <li><a href="index.php#lettre_motivation">Lettre De Motication</a></li>
+                <li><a href="index.php#lettre_motivation">Lettre De Motivation</a></li>
                 <li><a href="index.php#contacts">Contact</a></li>
                 <?php
                 if(basename($_SERVER['PHP_SELF'])!="projets.php")
-                    echo '<li><a href="./vues/projets.php">Projets</a></li>';
+                    echo '<li><a href="index.php?cas=projet">Projets</a></li>';
                 if(basename($_SERVER['PHP_SELF'])!="msgInst.php")
-                    echo '<li><a href="./vues/msgInst.php">Messagerie</a></li>';
+                    echo '<li><a href="index.php?cas=msg">Messagerie</a></li>';
                 ?>
             </ul>
             <ul class="nav navbar-nav navbar-right">
@@ -60,9 +48,13 @@
                 <ul id="connexion" class="dropdown-menu">
                   <li><input type="email" class="form-control" id="email" placeholder="Email"></li>
                   <li><input type="password" class="form-control" placeholder="password" id="pwd"></li>
-                  <li><button id="btnco" type="submit" class="btn btn-default">Submit</button></li>
+                  <li><button id="btnco" type="submit" class="btn btn-default"> Submit</button></li>
                 </ul>
-                <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                    <?php
+                    if(basename($_SERVER['PHP_SELF'])!="inscription.php")
+                        echo '<li><a href="index.php?cas=inscription"><span class="glyphicon glyphicon-user"></span> inscription</a></li>';
+                    ?>
+
             </ul>
         </div>
     </nav>
